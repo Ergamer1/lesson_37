@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+$(function() {
+  $('#show_message').on('click', function() {
+    console.log('This is a message');
+  });
+
+  $('#do_heavy_task').on('click', function() {
+    var i = 0;
+    while (i < 1000000000) {
+      i++;
+    }
+    console.log(i);
+  });
+});
+</script>
+<body>
+  <button id="show_message">Show message</button>
+  <br />
+  <button id="do_heavy_task">Do heavy task</button>
+
+</body>
+</html>

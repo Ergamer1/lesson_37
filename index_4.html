@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous">
+  </script>
+</head>
+<script>
+  function printCountry (response) {
+    console.log(response);
+  }
+
+  $.ajax({
+    method: 'GET',
+    url: "https://restcountries.eu/rest/v2/name/Kyrgyzstan",
+    success: printCountry
+  });
+</script>
+<body>
+</body>
+</html>
